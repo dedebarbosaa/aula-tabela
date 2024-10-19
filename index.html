@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        th, td {
+            border: 1px solid black;
+        }
+        tfoot {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço (R$)</th>
+                <th>Black friday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Maçã</td>  <!--<td colspan="2">Maçã</td> tem a função de mesclar células no sentido das linhas, com base no número ""-->
+                <td>2</td>  <!-- <td rowspan="2">2</td> tem a função de mesclar células no sentido das colunas, com base no número ""-->
+                <td>5,00</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+            <tr>
+                <td>Laranja</td>
+                <td>10</td>
+                <td>10,00</td>
+            </tr>
+            <tr>
+                <td>Uva</td>
+                <td>2</td>
+                <td>15,00</td>
+                <td>Não</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>30,00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</body>
+</html>
